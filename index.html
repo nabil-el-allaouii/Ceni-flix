@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body onload="home()">
+    <div class="header">
+        <img id="logo" src="images/CinéFlix.svg" alt="">
+        <div class="right-side">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="favorite.html"><li>My List</li></a>
+            </ul>
+            <div class="search-section">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                        stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <input onclick="searchclick()" onkeyup="search()" class="search-bar" type="text"
+                    placeholder="search for movie">
+            </div>
+            <input type="checkbox" id="dark">
+            <label for="dark">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg id="dark-button" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                        stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="sun-light" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                        stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </label>
+        </div>
+    </div>
+
+    <div class="slider">
+
+        <div class="buttons">
+            <button id="test" onclick="prevfunction()">&#8249;</button>
+            <button onclick="myfunction()">&#8250;</button>
+        </div>
+
+        <input class="check1" type="radio" id="radio1" name="slide">
+        <input class="check2" type="radio" id="radio2" name="slide">
+        <input class="check3" type="radio" id="radio3" name="slide">
+        <input class="check4" type="radio" id="radio4" name="slide">
+        <input class="check5" type="radio" id="radio5" name="slide">
+        <div class="slider-section">
+            <img src="covers/thegodfather.png" alt="">
+            <img src="covers/joker.jfif" alt="">
+            <img src="covers/breaking-bad.jfif" alt="">
+            <img src="covers/the-maze.jfif" alt="">
+            <img src="covers/Spirited Away.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="movie-section">
+        <div class="movie">
+            <img id="movie-banner" src="images/spirited away.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>Spirited Away</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img id="movie-banner" src="images/the-godfather.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>The Godfather</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img id="movie-banner" src="images/Joker.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>Joker</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img id="movie-banner" src="images/breaking-bad.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>Breaking Bad</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img id="movie-banner" src="images/the-maze-runner.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>The Maze Runner</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img id="movie-banner" src="images/grave-of-fireflies.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>Grave of The Fireflies</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img id="movie-banner" src="images/harrypotter.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>Harry Potter</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img id="movie-banner" src="images/Monster.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>Monster</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img id="movie-banner" src="images/Despicable Me.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>Despicable me</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img id="movie-banner" src="images/lord-of-the-rings.jfif" alt="">
+            <div class="rating">
+                <img src="images/Star 6.svg" alt="">
+                <p>( 4.5 / 5 )</p>
+            </div>
+            <h3>The Lord of The Rings</h3>
+            <div class="hovered-text">
+                <h4>Movie title</h4>
+                <a href="details.html"><button class="details-button">Details</button></a>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="heart" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div>
+                <ul>
+                    <li>About us</li>
+                    <li>FAQ</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Tasks</li>
+                    <li>Movies</li>
+                    <li>Licenses</li>
+                </ul>
+            </div>
+            <div>
+                <ul id="block">
+                    <li>contact-us</li>
+                    <li>Policy</li>
+                    <li>Terms & conditions</li>
+                </ul>
+            </div>
+        </div>
+        <p>© 1990-2024 by CinéFlix, Inc.</p>
+    </div>
+
+    <script src="style/index.js">
+        // let moviesTobestocked = document.querySelectorAll(".movie");
+        // moviesTobestocked.forEach((e) => {
+        //     let movie = e.outerHTML;
+        //     e.addEventListener("click", (v) => {
+        //         localStorage.setItem("form", movie);
+        //     })
+        // });
+    </script>
+</body>
+
+</html>
